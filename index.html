@@ -2,39 +2,164 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/0ed42a5f5e.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <title>Mi Portafolio</title>
 </head>
 
 <body>
-    <header>
-        <ul>
-            <li>
-                <a href="https://lighthearted-twilight-f4caab.netlify.app/">Home</a>
-            </li>
-            <li>
-                <a href="#">Servicios</a>
+  <header class="header">
+    <nav class="navbar grid--container">
+      <a class="navbar__logo" href="#"></a>
 
-            </li>
-            <li>
-                <a href="#">Acerca de mi</a>
-            </li>
-            <li>
-                <a href="#">Mis habilidades</a>
-            </li>
-            <li>
-                <a href="#">Mi portafolio</a>
-            </li>
-            <li>
-                <a href="#">Contacto</a>
-            </li>
+      <div class="navbar__menu">
+        <a class="btn btn__close" href="#"><i class='bx bx-x navbar__icon'></i></a>
+        <ul class="navbar__list">
+          <li class="navbar__item"><a class="navbar__link" href="#home">Inicio</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#about">Acerca de mi </a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#Portafolio">portafolio</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#contac">Contacto</a></li>
+
         </ul>
-    </header>
-    <nav></nav>
+      </div>
+
+      <a class="btn btn__open" href="#"><i class='bx bx-menu navbar__icon'></i></a>
+    </nav>
+  </header>
+  <main>
+    <section class="home">
+      <div class="home__container grid--container" >
+        <div class="home__info">
+          <h1 class="home__title">Junior R.</h1>
+          <p class="home__description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          </p>
+          <div class="home__image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmYH2clRn1qDN6BifNyoYPL1rF6uXA5NFifA&usqp=CAU" alt="profile photo">
+          </div>
+          
+        </div>
+
+          <ul class="home__social">
+          <li class="home__social-item"><a class="home__social-link" href="#"><i class='bx bxl-linkedin'></i></a></li>
+          <li class="home__social-item"><a class="home__social-link" href="#"><i class='bx bxl-instagram'></i></a></li>
+          <li class="home__social-item"><a class="home__social-link" href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+          </ul>
+
+      </div>
+
+    </section>
+    
+    <section class="about section ">
+      <h2 class="section__title">Acerca de Mí</h2>
+      <div class="about__container grid--container">
+        <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorem fugit asperiores labore soluta libero saepe molestiae laborum alias consequuntur, rerum ea. Eius, quos consectetur. Reprehenderit esse iste veritatis dolore.</p>
+
+        <div class="about__skills grid--container">
+          <div class="about__cards">
+              <div class="about__card">
+                <i class='bx bxl-html5'></i>
+                <h3 class="about__card-title">HTML5</h3>
+                <p class="about__des">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+              <div class="about__card">
+                <i class='bx bxl-css3' ></i>
+                <h3 class="about__card-title">CSS3</h3>
+                <p class="about__des">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </p>
+              </div>
+              <div class="about__card">
+                <i class='bx bxl-javascript' ></i>
+                <h3 class="about__card-title">JavaScript</h3>
+                <p class="about__des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium incidunt ad consectetur possimus.
+                </p>
+    
+              </div>
+              <div class="about__card">
+                <i class='bx bxl-react' ></i>
+                <h3 class="about__card-title">react</h3>
+                <p class="about__des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium? Totam accusantium suscipit quibusdam non.
+                </p>
+    
+              </div>
+          </div>
+
+          <div class="about__tags">
+            <h3 class="about__tags-title">Habilidades:</h3>
+            <div class="about__tags-container">
+              <span class="about__tag">Responsable</span>
+              <span class="about__tag">Autodidacta</span>
+              <span class="about__tag">Trabajo en Equipo</span>
+              <span class="about__tag">Proactivo</span>
+              <span class="about__tag">Creativo</span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+    </section>
+    <section class="projects grid--container">
+      <div class="projects-images">
+        <h2 class="projects-title">Proyectos</h2>
+        <div class="projects-image"><img src="https://www.freecodecamp.org/espanol/news/content/images/2020/11/image-27.png" alt=""></div>
+        <br>
+        <div class="projects-image"><img src="https://www.freecodecamp.org/espanol/news/content/images/2020/11/image-24.png" alt=""></div>
+        <br>
+        <div class="projects-image"><img src="https://www.freecodecamp.org/espanol/news/content/images/2020/11/image-27.png" alt=""></div>
+      </div>
+      </section>
+      <section>
+        <div class="grid--container">
+          <div class="contact">
+            <div class="contact__info">
+              <h2 class="contact__title">
+                Informacion de contacto
+              </h2>
+              <p class="contact__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, nesciunt dicta.</p>
+            </div>
+            <div class="icons">
+              <div class="icon">
+                <i class='bx bxs-phone'><span>++00 123 456 7890</span></i>
+              </div>
+              <br>
+              <div class="icon">
+                <i class='bx bx-envelope'></i><span>feardinner02@gmail.com</span></i>
+              </div>
+              <br>
+              <div class="icon">
+                <i class='bx bx-location-plus'></i><span>Perú Lima</span></i>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+
+      </section>
+  </main>
+  <footer>
+    <h2 class="final">Hecho con <i class='bx bxs-heart'></i>en Academlo</h2>
+  </footer>
+  <script>
+    const btnMenu = document.querySelector('.btn__open')
+    const btnClose = document.querySelector('.btn__close')
+    const Menu = document.querySelector('.navbar__menu')
+
+    btnMenu.onclick = function () {
+      Menu.classList.add('show--menu')
+    }
+    btnClose.onclick = function () {
+      Menu.classList.remove('show--menu')
+    }
+  </script>
 </body>
 
 </html>
